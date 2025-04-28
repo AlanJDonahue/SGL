@@ -33,7 +33,11 @@ h1, h2, h3 {
     width: 25%;
 }
 
-
+.data {
+    display: flex; 
+    justify-content: center;
+    /* align-items: center; */
+}
 
 .data-squares{
     display: grid;
