@@ -1,0 +1,168 @@
+html, body {
+    margin:0;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: lightgray; */
+    background-color: #121212;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(222, 222, 222);
+}
+.landing h2 {
+    font-size: 2.5em;
+    color: rgb(222,222,222);
+}
+.landing h3 {
+    font-size: 2em;
+    color: rgb(178, 178, 178);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.cc-logo {
+    width: 25%;
+}
+
+
+
+.data-squares{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, auto));
+    grid-template-rows: repeat(3, minmax(auto, auto));
+    grid-gap: 20px;
+    border: 1px solid green;
+    width: 90%;
+}
+
+.first {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.second {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.third {
+    grid-column: 3/ 4;
+    grid-row: 2 / 3;
+}
+
+.fourth {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.fifth {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.data-square {
+    border: 1px solid black;
+    border-radius: 10px;
+    /* width: 25%; */
+    padding: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+.card-title {
+    text-align: center
+}
+
+.card-title h4 {
+    display: inline;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* justify-items: center; */
+    place-items: center;
+    margin: 10px;
+}
+
+.card-nums {
+    grid-column-start: 1;
+    border-right: 1px solid black;
+    font-size: 1.25em;
+    padding-right: 25px;
+}
+
+.card-nums span {
+    font-weight: 700;
+}
+
+.card-change {
+    grid-column-start: 2;
+    /* padding-left: 15%; */
+    justify-content: center;
+}
+
+.card-footer-wrapper {
+    background-color: black;
+}
+
+.card-footer{
+    /* display: flex;
+    justify-content: space-evenly;
+    flex: 1; */
+    /* https://codepen.io/eriklharper/pen/JMKMqa */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, auto));
+    grid-gap: 1px;
+    /* place-items: center; */
+    /* background-color: white; */
+}
+
+.card-footer > div {
+    background-color: white;
+}
+
+.card-footer img {
+    /* without align-self, the image size gets distorted by display
+    flex from the parent container */
+    /* align-self: center;
+    border-right: 1px solid black;
+    padding-right: 10px; */
+    /* margin: auto; */
+    grid-column: 1 / 2;
+    /* background-color: white; */
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.card-footer p:nth-of-type(1) {
+    /* border-right: 1px solid black; */
+    /* margin: auto;
+    padding-right: 10px; */
+    grid-column: 2 / 3;
+    /* background-color: white; */
+}
+
+.people-icon, .member-count, .leader-icon, .leader {
+    display: inline;
+}
+
+.card-footer p:nth-of-type(2) {
+    /* border-right: 1px solid black; */
+    /* margin: auto; */
+    grid-column: 3 / 4;
+    /* background-color: white; */
+    /* display: inline; */
+}
+
